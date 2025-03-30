@@ -2,24 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://diletta.click/tags/articolo/</loc>
-    <lastmod>2025-03-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://diletta.click/</loc>
-    <lastmod>2025-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2000-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://diletta.click/tags/primo/</loc>
-    <lastmod>2025-03-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://diletta.click/prova/</loc>
-    <lastmod>2025-03-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://diletta.click/tags/prova/</loc>
-    <lastmod>2025-03-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://diletta.click/tags/</loc>
-    <lastmod>2025-03-30T00:00:00+00:00</lastmod>
+    <loc>https://diletta.click/posts/</loc>
+    <lastmod>2000-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://diletta.click/categories/</loc>
+  </url><url>
+    <loc>https://diletta.click/tags/</loc>
   </url>
 </urlset>
