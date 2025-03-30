@@ -1,0 +1,24 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+	<title>Diletta Falcone&#39;s Webpage</title>
+	<link>https://diletta.click/tags/articolo/</link>
+	<description>Recent content in Articolo on Diletta Falcone&#39;s Webpage</description>
+	<generator>Hugo -- gohugo.io</generator>
+	<language>it-IT</language>
+	<lastBuildDate>Sun, 30 Mar 2025 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://diletta.click/tags/articolo/index.xml" rel="self" type="application/rss+xml" />
+	
+	
+	<item>
+		<title>Primo articolo</title>
+		<link>https://diletta.click/prova/</link>
+		<pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
+		
+		<guid>https://diletta.click/prova/</guid>
+		<description>&lt;p&gt;Prova&lt;/p&gt;
+</description>
+	</item>
+	
+	</channel>
+</rss>
