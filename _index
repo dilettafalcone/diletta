@@ -1,34 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta name="generator" content="Hugo 0.133.0">
-	<title>Retro Think</title>
-	<link rel="canonical" href="https://retrothink.click/">
-	<link rel='alternate' type='application/rss+xml' title="Retro Think RSS" href='/index.xml'>
-	<link rel='stylesheet' type='text/css' href='/style.css'>
-	<link rel="icon" href="/favicon.ico">
-	<meta name="description" content="The no-bloated blog.">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="robots" content="index, follow">
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-</head>
-<body>
-<main>
-<header><h1 id="tag_Diletta&#39;s Blog">
-Diletta&#39;s Blog
-</h1></header>
-<article>
+---
+title: "📝 Based Posts 📰"
+description: 'The fast-loading post site with content only and no ads.'
+layout: single
+---
 
-<h2 id="what-are-you-looking-for">What are you looking for?</h2>
+## What do you want to read?
+
 <div class="search js-only">
-  <input type="text" id="search" placeholder="Search all posts...">
+  <input type="text" id="search" placeholder="Search...">
   <button id="clear-search">
     <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Backspace</title><path d="M135.19 390.14a28.79 28.79 0 0021.68 9.86h246.26A29 29 0 00432 371.13V140.87A29 29 0 00403.13 112H156.87a28.84 28.84 0 00-21.67 9.84v0L46.33 256l88.86 134.11z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M336.67 192.33L206.66 322.34M336.67 322.34L206.66 192.33M336.67 192.33L206.66 322.34M336.67 322.34L206.66 192.33"></path></svg>
   </button>
 </div>
+
 <script>
 // @license magnet:?xt=urn:btih:5ac446d35272cc2e4e85e4325b146d0b7ca8f50c&dn=unlicense.txt Unlicense
 
@@ -44,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const artlist = document.getElementById("artlist");
 
   search.addEventListener("input", () => {
+    // grab search input value
     const searchText = search.value.toLowerCase().trim().normalize('NFD').replace(/\p{Diacritic}/gu, "");
     const searchTerms = searchText.split(" ");
     const hasFilter = searchText.length > 0;
@@ -51,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     artlist.classList.toggle("list-searched", hasFilter);
     oldheading.classList.toggle("hidden", hasFilter);
 
+    // for each post hide all but matched
     posts.forEach(post => {
       const searchString = `${post.textContent} ${post.dataset.tags}`.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, "");
       const isMatch = searchTerms.every(term => searchString.includes(term));
@@ -73,44 +59,16 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 // @license-end
 </script>
-<h2 id="newest-posts">Newest Posts</h2>
-<ul id="artlist"></ul>
 
+## Newest Posts
 
-<h2 id="or-browse-by-category">Or Browse by Category&hellip;</h2>
+{{< artlist >}}
 
+## Or Browse by Category...
 
-<h2 id="about-this-site">About this site</h2>
-<div style="text-align: center;">
-  <p>Diletta's no-bloated blog
-</div>
+{{< tagcloud >}}
 
+## About this site
 
-
-
-</article>
-</main>
-
-<footer style="text-align: center; padding: 1em 0; background-color: #4141412f; border-top: 1px solid #D08770;">
-	<div style="margin-bottom: 0.5em;">
-		<a href="https://retrothink.click/" style="text-decoration: none; color: #D08770; font-weight: bold;">
-			https://retrothink.click/
-		</a>
-	</div>
-	<div style="display: flex; justify-content: center; gap: 15px; align-items: center;">
-		<a href="/index.xml" title="Subscribe via RSS for updates.">
-			<img src="/rss.svg" alt="RSS Feed" style="height: 24px;">
-		</a>
-		<a href="https://www.youtube.com/@Retro_Think" title="Visita il mio canale YouTube">
-			<img src="/youtube.png" alt="YouTube Channel" style="height: 24px;">
-		</a>
-	</div>
-	
-</footer>
-
-<script src="https://unpkg.com/feather-icons"></script>
-<script>
-  feather.replace()
-</script>
-</body>
-</html>
+No-bloated blog about retro computing, ThinkPads, Linux, writing tools, and more.  
+You'll also find transcripts of the videos from my YouTube channel, [{{< icon "youtube" >}}Retro Think](https://www.youtube.com/@Retro_Think) 
